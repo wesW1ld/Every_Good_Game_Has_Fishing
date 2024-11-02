@@ -21,7 +21,7 @@ public class ProgressBar : MonoBehaviour
     {
         if(GameManager.Instance.fill == true)
         {
-            pb.fillAmount += speed;
+            pb.fillAmount += speed / 10000f;
         }
     }
 }

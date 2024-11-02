@@ -18,9 +18,6 @@ public class FishingControls : MonoBehaviour
 
         end = start + 497;
 
-        rb.velocity = new Vector2(0, -speed);
-
-        StartCoroutine(Move());
     }
 
     void Update()
@@ -34,14 +31,14 @@ public class FishingControls : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, start, transform.position.z);
         }
-    }
 
-    IEnumerator Move()
-    {
-        while(true)
+        if(Input.GetKey(KeyCode.Space))
         {
-            rb.velocity *= -1;
-            yield return new WaitForSeconds(Random.Range(.3f, 2f));
+            rb.velocity = new Vector2(0, speed);
+        }
+        else
+        {
+            rb.velocity = new Vector2(0, -speed);
         }
     }
 
