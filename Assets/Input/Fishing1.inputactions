@@ -1,0 +1,56 @@
+{
+    "name": "Fishing1",
+    "maps": [
+        {
+            "name": "Fishing",
+            "id": "c40dd1ae-247a-44a3-b3fb-56285314ed4c",
+            "actions": [
+                {
+                    "name": "Input",
+                    "type": "PassThrough",
+                    "id": "2e93558c-eafd-4b11-bc40-ea0a85f22222",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8373244e-6e23-4cd3-86dd-cb98daf89a11",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "16e9d464-1811-4962-96d9-74537e4954ee",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0f3713ce-de6b-409a-be2b-b8c04a9dafbb",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Input",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

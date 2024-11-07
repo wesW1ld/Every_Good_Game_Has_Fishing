@@ -32,7 +32,7 @@ public class FishingControls : MonoBehaviour
             transform.position = new Vector3(transform.position.x, start, transform.position.z);
         }
 
-        if(Input.GetKey(KeyCode.Space))
+        if(InputManager.instance.pressInput)
         {
             rb.velocity = new Vector2(0, speed);
         }
